@@ -109,7 +109,7 @@ module DelayedPaperclip
           when Symbol, String
             method = instance.method callback
             arity = method.arity
-            if arity == -1 || arity == 1
+            if arity == 1
               method.call self
             else
               method.call
